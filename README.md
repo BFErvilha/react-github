@@ -11,6 +11,6 @@ Para instalar todas as dependências (pasta node_modules)<br />
 Para rodar o projeto local<br />
 Abrir [http://localhost:3000](http://localhost:3000) para visualizar no navegador.
 
-Login para teste:
-user: admin
-password: password
+Login para teste:<br />
+user: admin  <br />
+password: password <br />
