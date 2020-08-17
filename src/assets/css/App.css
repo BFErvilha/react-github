@@ -1,0 +1,267 @@
+:root {
+  --color-primary: #05d145;
+  --color-secondary: #047f27;
+  --color-bg: #000000;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-secondary);
+}
+
+body {
+  padding-top: 4rem;
+  margin: 0px;
+  color: white;
+  background: var(--color-bg);
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: 'Spectral', Georgia;
+  font-family: var(--type-first);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+.header {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  background: var(--color-secondary);
+  top: 0;
+  -webkit-box-shadow: 10px 4px 16px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 4px 16px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 4px 16px -12px rgba(0, 0, 0, 0.75);
+}
+
+.bg-login {
+  height: 91vh;
+  background: linear-gradient(87deg, var(--color-bg), var(--color-secondary));
+  margin-top: -10px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.nav a {
+  color: white;
+}
+
+.nav a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.login {
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.box-login {
+  margin: 15% auto;
+  border-radius: 10px;
+  border: 1px solid #d6d6d6;
+  background-color: white;
+  padding: 0.8rem;
+  -webkit-box-shadow: 10px 4px 16px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 4px 16px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 4px 16px -12px rgba(0, 0, 0, 0.75);
+}
+
+.box-login h1 {
+  color: var(--color-secondary);
+  margin-bottom: 10px;
+}
+
+.bg-search {
+  width: 100%;
+  height: 320px;
+  background-image: url('../img/bg3.jpg');
+  background-size: cover;
+}
+
+.searchField {
+  margin: 8% auto;
+}
+
+.btn-search {
+  border: 1px solid #79b8ff;
+  background-color: #79b8ff;
+  color: white;
+  margin-left: 20px;
+}
+
+.search-title {
+  text-align: center;
+  margin: 10px auto 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 80%;
+}
+
+.search-title h1 {
+  color: white;
+  font-size: 32px;
+}
+
+.border-gradient {
+  border: 1px solid var(--color-primary) !important;
+  -webkit-box-shadow: 7px 6px 17px -13px var(--color-secondary);
+  -moz-box-shadow: 7px 6px 17px -13px var(--color-secondary);
+  box-shadow: 7px 6px 17px -13px var(--color-secondary);
+}
+
+.repoContainer {
+  margin-top: 20px;
+  height: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.repoCard {
+  height: 120px;
+}
+
+.repoTitle {
+  color: var(--color-secondary);
+  font-weight: 600;
+  font-size: 20px !important;
+}
+
+.repoCardButton {
+  float: right;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.repoCardButton:hover,
+.repoCardButton:focus,
+.repoCardButton:active {
+  color: var(--color-secondary) !important;
+  background-color: white !important;
+  border: 1px solid var(--color-secondary) !important;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.footer > div > p {
+  color: var(--color-secondary);
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.modal-header {
+  background-color: var(--color-secondary);
+}
+.modal-body h4,
+.modal-body p {
+  color: #333;
+}
+
+.repoModalButton {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+
+.repoModalButton:hover,
+.repoModalButton:focus,
+.repoModalButton:active {
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-secondary);
+
+  outline: none;
+  box-shadow: none !important;
+}
+
+.errorText {
+  font-size: 25px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 20px;
+  color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-login {
+    margin: 15% 15px;
+  }
+
+  .repoContainer {
+    margin-bottom: 55px;
+  }
+}
